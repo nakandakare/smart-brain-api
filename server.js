@@ -124,6 +124,6 @@ app.put('/image', (req, res) => {
         .catch(err => res.status(400).json(err));
 })
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log('working');
 });
