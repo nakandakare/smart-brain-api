@@ -83,7 +83,6 @@ app.post('/register', (req, res) => {
                         .insert({
                             name: name,
                             email: loginEmail[0],
-                            entries: 0,
                             joined: new Date()
                         })
                         .then(user => {
